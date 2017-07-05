@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Lesson 1 - basic prototype
+{% endblock %}
+
+{% set serviceName = 'Juggling licence tutorial' %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/">Back</a>
+
+      <h1 class="heading-large">
+        Lesson 1 - basic prototype
+      </h1>
+
+      <p>In this lesson we’ll create some pages and link them together so that a user can move from one page to another.</p>
+
+      <a class="button" href="start-page" role="button">See finished example</a>
+
+      <h2 class="heading-medium">Complete lesson source files</h2>
+
+      <ul class="list list-bullet">
+        <li>
+          <a href="https://github.com/alphagov/govuk_prototype_kit/tree/2017-tutorial-files/app/views/lesson-1/start-page.html">start-page.html</a>
+        </li>
+        <li>
+          <a href="https://github.com/alphagov/govuk_prototype_kit/tree/2017-tutorial-files/app/views/lesson-1/juggling-ability.html">juggling-ability.html</a>
+        </li>
+        <li>
+          <a href="https://github.com/alphagov/govuk_prototype_kit/tree/2017-tutorial-files/app/views/lesson-1/juggling-feat.html">juggling-feat.html</a>
+        </li>
+        <li>
+          <a href="https://github.com/alphagov/govuk_prototype_kit/tree/2017-tutorial-files/app/views/lesson-1/check-your-answers.html">check-your-answers.html</a>
+        </li>
+        <li>
+          <a href="https://github.com/alphagov/govuk_prototype_kit/tree/2017-tutorial-files/app/views/lesson-1/application-complete.html">application-complete.html</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

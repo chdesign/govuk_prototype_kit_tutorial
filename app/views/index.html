@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Prototype kit tutorial introduction
+{% endblock %}
+
+{% set serviceName = 'Juggling licence tutorial' %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Juggling licence tutorial
+      </h1>
+
+      <p class="lede">We're going to build a prototype for a juggling licence service.</p>
+
+      <p>We'll cover the basics of creating a prototype, making it interactive, and working with user data.</p>
+
+      <div class="form-group">
+        <a class="button" href="lesson-4/start-page" role="button">See finished prototype</a>
+      </div>
+
+      <p>Our prototype will end up looking a bit like this:</p>
+
+      <img src="/public/images/juggling-tutorial-basic-flow.png" alt="Flow diagram of the prototype we'll make" width="100%">
+
+      <!-- <h2 class="heading-medium">Tutorial instructions</h2>
+
+      <a href="https://docs.google.com/document/d/1qDkutvVb0FYmUGLMH0EG7bnuX5Ez-yD4IBPmhXqUxew/edit#">Google doc instructions</a> -->
+      
+
+
+      <h2 class="heading-medium">Lessons</h2>
+      <ol>
+        <li><a href="lesson-1/">Lesson 1 - basic prototype</a></li>
+        <li><a href="lesson-2/">Lesson 2 - add some questions</a></li>
+        <li><a href="lesson-3/">Lesson 3 - data</a></li>
+        <li><a href="lesson-4/">Lesson 4 - routes</a></li>
+        <li><a href="lesson-5/">Lesson 5 - add a new question</a></li>
+      </ol>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
