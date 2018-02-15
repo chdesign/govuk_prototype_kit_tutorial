@@ -1,49 +1,75 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Lesson 2 - add some questions
+  Start page example
 {% endblock %}
 
-{% set serviceName = 'Juggling licence tutorial' %}
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
 
 {% block content %}
 
 <main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="https://www.gov.uk">Home</a></li>
+      <li><a href="">Circus & acrobatics</a></li>
+      <li>Ball skills</li>
+    </ol>
+  </div>
+
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <a class="link-back" href="/">Back</a>
-
-      <h1 class="heading-large">
-        Lesson 2 - add some questions
+      <h1 class="heading-xlarge">
+        {% if serviceName %} {{ serviceName }} {% endif %}
       </h1>
 
-      <p>In this lesson we’re going to add some radio buttons and intputs to the two question pages.</p>
+      <p>Use this service to:</p>
 
-      <a class="button" href="start-page" role="button">See finished example</a>
-
-      <h2 class="heading-medium">Complete lesson source files</h2>
-      
       <ul class="list list-bullet">
-        <li>
-          <a href="https://github.com/alphagov/govuk_prototype_kit/tree/2017-tutorial-files/app/views/lesson-2/start-page.html">start-page.html</a>
-        </li>
-        <li>
-          <a href="https://github.com/alphagov/govuk_prototype_kit/tree/2017-tutorial-files/app/views/lesson-2/juggling-ability.html">juggling-ability.html</a>
-        </li>
-        <li>
-          <a href="https://github.com/alphagov/govuk_prototype_kit/tree/2017-tutorial-files/app/views/lesson-2/juggling-feat.html">juggling-feat.html</a>
-        </li>
-        <li>
-          <a href="https://github.com/alphagov/govuk_prototype_kit/tree/2017-tutorial-files/app/views/lesson-2/check-your-answers.html">check-your-answers.html</a>
-        </li>
-        <li>
-          <a href="https://github.com/alphagov/govuk_prototype_kit/tree/2017-tutorial-files/app/views/lesson-2/application-complete.html">application-complete.html</a>
-        </li>
-      </ul>
+        <li>tell government about your juggling ability</li>
+        <li>report your greatest feat</li>
+        <li>get a juggling licence</li>
+      </uL>
+
+      <p>Registering takes around 5 minutes.</p>
+
+      <p>
+        <a class="button button-start" href="juggling-ability" role="button">Start now</a>
+      </p>
+
+      <h2 class="heading-medium">Before you start</h2>
+
+      <p>You can also <a href="#">register by post.</a></p>
+
+      <p>The online service is also available in <a href="#">Welsh (Cymraeg).</a></p>
+
+      <p>You can’t register for this service if you’re in the UK illegally.</p>
+
+    </div>
+    <div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Circus skills</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="#">Unicycling licence</a></li>
+            <li><a href="#">Ropework</a></li>
+            <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+          </ul>
+        </nav>
+      </aside>
 
     </div>
   </div>
+
 </main>
 
 {% endblock %}

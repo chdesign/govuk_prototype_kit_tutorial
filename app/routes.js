@@ -8,7 +8,7 @@ router.get('/', function (req, res) {
 
 // add your routes here
 
-router.post('/lesson-4/juggling-feat', function (req, res) {
+router.post('/lesson-2/juggling-feat', function (req, res) {
 
   // Make a variable and give it the value from 'juggling-ability'
   var jugglingAbility = req.session.data['juggling-ability']
@@ -16,11 +16,11 @@ router.post('/lesson-4/juggling-feat', function (req, res) {
   // Check whether the variable matches a condition
   if (jugglingAbility == "3 or more"){
     // Send user to next page
-    res.redirect('/lesson-4/juggling-feat')
+    res.redirect('/lesson-2/juggling-feat')
   }
   else {
     // Send user to ineligible page
-    res.redirect('/lesson-4/ineligible')
+    res.redirect('/lesson-2/ineligible')
   }
 
 })
